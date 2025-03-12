@@ -1,0 +1,25 @@
+<?php
+    if(!permissions::has('preferences', 1)){
+        insufficient_permissions();
+    }
+?>
+
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="handler.js"></script>
+
+    <div class="content-page-top">
+        <span><i class="fa fa-cog"></i> Server Boot</span>
+    </div>
+    <div class="content-outer-hbox">
+        <div class="scrollable content-inner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="StatusResponse">
+                        <button class="btn btn-neutron" id="StatusButton" style="margin-top: 5px;">Check Status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
